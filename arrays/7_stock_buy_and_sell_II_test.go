@@ -10,7 +10,7 @@ type TestCaseStockBuyAndSellII struct {
 	expectedOutput int
 }
 
-func TestMaxProfit(t *testing.T) {
+func TestMaxProfitII(t *testing.T) {
 	tcs := []TestCaseStockBuyAndSellII{
 		{
 			name:           "TC01",
@@ -21,7 +21,7 @@ func TestMaxProfit(t *testing.T) {
 
 	for _, tc := range tcs {
 		t.Run(tc.name, func(t *testing.T) {
-			resp := MaxProfit(tc.input)
+			resp := MaxProfitII(tc.input)
 			if tc.expectedOutput != resp {
 				t.Fatalf("expected %v but got %v", tc.expectedOutput, resp)
 			}

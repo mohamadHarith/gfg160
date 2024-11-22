@@ -8,7 +8,7 @@ package main
 // Output: 865
 // Explanation: Buy the stock on day 0 and sell it on day 3 => 310 – 100 = 210. Buy the stock on day 4 and sell it on day 6 => 695 – 40 = 655. Maximum Profit = 210 + 655 = 865.
 
-func MaxProfit(prices []int) int {
+func MaxProfitII(prices []int) int {
 	var res int
 
 	for i := 1; i < len(prices); i++ {
