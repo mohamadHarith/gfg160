@@ -37,6 +37,7 @@ func MaxProfitI(prices []int) int {
 		if (prices[i] - min) > res {
 			res = prices[i] - min
 		}
+
 	}
 
 	return res
